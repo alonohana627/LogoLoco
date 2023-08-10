@@ -12,10 +12,10 @@ enum class Severity{
 };
 
 enum class MessageStatus{
-    SUCCESS,
-    FAIL,
-    PROGRESS,
     NOTE,
+    SUCCESS,
+    PROGRESS,
+    FAILURE,
 };
 
 }

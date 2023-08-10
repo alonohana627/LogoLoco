@@ -1,5 +1,14 @@
 #include <iostream>
+#include <LogoLoco.h>
 
-int main(){
-    std::cout << "Hello World" << std::endl;
+int main() {
+    using namespace LogoLoco;
+    FileSink fileSink{"C:\\tmp\\logi.txt"};
+    ConsoleSink consoleSink{};
+
+    Logger logger{fileSink, consoleSink};
+
+    logger.log("Wassup");
+    logger.log("Wassup2");
+
 }
